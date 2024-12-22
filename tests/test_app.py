@@ -10,7 +10,8 @@ def client():
 def test_index_page(client):
     response = client.get('/')
     assert response.status_code == 200
-    assert b"Named Entity Recognition" in response.data
+    assert b"TRIPLETS EXTRACTION ALGORITHM" in response.data  
+    assert b"NER result" in response.data  
 
 def test_submit_text(client, mocker):
     mock_nlp = mocker.patch('app.nlp', return_value=[
