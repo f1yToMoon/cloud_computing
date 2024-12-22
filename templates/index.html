@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KNOWLEDGE GRAPH</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h2>TRIPLETS EXTRACTION ALGORITHM</h2>
+    <p>
+        Set up parametes! Choose any text you want and put it in first text area.    
+    </p>
+    <label for="input_text">input text:</label>
+    <textarea id="input_text" name="input_text" rows="6" cols="195", placeholder="input text...">
+Способ подготовки нефти, включающий подачу нефтяной эмульсии в аппарат предварительного сброса воды, отделение части воды из нефтяной эмульсии в аппарате предварительного сброса воды и сброс части воды на очистные сооружения, дальнейшую подачу нефтяной эмульсии в буферные сепарационные емкости, сепарацию газа и воды из нефтяной эмульсии в буферных сепарационных емкостях, нагрев нефтяной эмульсии, горячее обезвоживание и обессоливание нефтяной эмульсии и откачку нефти потребителю, отличающийся тем, что уровень жидкости в буферной сепарационной емкости поддерживают в пределах от 40 до 60% ее высоты, нефтяную эмульсию вводят в буферную сепарационную емкость на уровне 50%-ного заполнения жидкостью, равномерно распределяют по поверхности жидкости по всей длине емкости, а подготовленную нефть полностью направляют потребителю
+    </textarea>
+    <label for="output_text">NER result:</label>
+    <div id="output_text", rows="6" cols="196"></div>
+    <p id="response_message"></p>
+    <script src="{{ url_for('static', filename='js/script02.js') }}"></script>
+</body>
+</html>
